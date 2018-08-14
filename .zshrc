@@ -4,8 +4,9 @@ export ZSH="/Users/alasdairm/.oh-my-zsh"
 alias zshrc="subl ~/.zshrc"
 alias gco="git checkout"
 alias gp="git pull"
-alias gb="git branch"
+alias gst="git status"
 alias gpush="git push"
+alias gb="git branch"
 alias cb="carthage bootstrap"
 
 # Set name of the theme to load. Optionally, if you set this to "random"
@@ -17,9 +18,8 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(
-  git
-)
+# plugins=(
+# )
 
 # Xcode via @orta
 openx(){ 
