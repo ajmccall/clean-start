@@ -7,7 +7,9 @@ alias gp="git pull"
 alias gst="git status"
 alias gpush="git push"
 alias gb="git branch"
-alias cb="carthage bootstrap"
+alias cb='carthage bootstrap --platform iOS,watchOS --use-binaries'
+alias cu='carthage update --platform iOS,watchOS --use-binaries'
+alias ddd='rm -rf ./DerivedData'
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
