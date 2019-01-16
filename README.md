@@ -14,7 +14,7 @@ Configuration and dot files I use when installing my development setup on a new 
 
 #### Ruby
 - RVM: `curl -sSL https://get.rvm.io | bash -s stable`
-- Install a ruby version: `rvm install 2.3.0 --with-openssl-dir=`````brew --prefix openssl``````
+- Install a ruby version: ``rvm install 2.3.0 --with-openssl-dir=`brew --prefix openssl` ``
 - `echo "gem: --no-document" >> ~/.gemrc`
 
 #### iOS Dev
