@@ -7,6 +7,7 @@ alias gp="git pull"
 alias gst="git status"
 alias gpush="git push"
 alias gb="git branch"
+alias nah='git reset --hard;git clean -df'
 alias cb='bundle exec carthage bootstrap --platform iOS,watchOS --use-binaries && afplay /System/Library/Sounds/Pop.aiff'
 alias cu='bundle exec carthage update --platform iOS,watchOS --use-binaries && afplay /System/Library/Sounds/Pop.aiff'
 alias ddd='rm -rf ./DerivedData'
