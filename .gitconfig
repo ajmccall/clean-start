@@ -3,4 +3,4 @@
 [user]
 	name = Alasdair
 [core]
-	editor = subl -n -w
+	editor = subl -n
