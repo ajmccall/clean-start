@@ -7,10 +7,11 @@ alias gp="git pull"
 alias gst="git status"
 alias gpush="git push"
 alias gb="git branch"
-alias nah='git reset --hard;git clean -df'
+alias gpf="git push --force-with-lease"
 alias cb='bundle exec carthage bootstrap --platform iOS,watchOS --use-binaries && afplay /System/Library/Sounds/Pop.aiff'
 alias cu='bundle exec carthage update --platform iOS,watchOS --use-binaries && afplay /System/Library/Sounds/Pop.aiff'
 alias ddd='rm -rf ./DerivedData'
+alias nah="git reset --hard HEAD"
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
