@@ -3,13 +3,13 @@ export ZSH="/Users/alasdairm/.oh-my-zsh"
 
 alias zshrc="subl ~/.zshrc"
 alias gco="git checkout"
-alias gp="git pull"
 alias gst="git status"
 alias gpush="git push"
 alias gb="git branch"
 alias gpf="git push --force-with-lease"
-alias cb='bundle exec carthage bootstrap --platform iOS,watchOS --use-binaries && afplay /System/Library/Sounds/Pop.aiff'
-alias cu='bundle exec carthage update --platform iOS,watchOS --use-binaries && afplay /System/Library/Sounds/Pop.aiff'
+alias cb='carthage bootstrap --platform iOS,watchOS --use-binaries && afplay /System/Library/Sounds/Pop.aiff'
+alias cu='carthage update --platform iOS,watchOS --use-binaries --new-resolver && afplay /System/Library/Sounds/Pop.aiff'
+alias sgpkitgen='swift run --package-path scripts/SGPKitGenerator'
 alias ddd='rm -rf ./DerivedData'
 alias nah="git reset --hard HEAD"
 
@@ -22,8 +22,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-# plugins=(
-# )
+# plugins=()
 
 # Xcode via @orta
 openx(){ 
@@ -62,6 +61,11 @@ fi
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
+export PATH=$PATH:$(go env GOPATH)/bin
+export GOPATH=$(go env GOPATH)
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 # Add Github access tokens if needed
-#export GITHUB_ACCESS_TOKEN="github.com=xxxxxx,github.thetrainline.com=xxxxx"
