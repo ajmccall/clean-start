@@ -7,9 +7,6 @@ alias gst="git status"
 alias gpush="git push"
 alias gb="git branch"
 alias gpf="git push --force-with-lease"
-alias cb='carthage bootstrap --platform iOS,watchOS --use-binaries && afplay /System/Library/Sounds/Pop.aiff'
-alias cu='carthage update --platform iOS,watchOS --use-binaries --new-resolver && afplay /System/Library/Sounds/Pop.aiff'
-alias sgpkitgen='swift run --package-path scripts/SGPKitGenerator'
 alias ddd='rm -rf ./DerivedData'
 alias nah="git reset --hard HEAD"
 
@@ -25,7 +22,7 @@ ZSH_THEME="robbyrussell"
 # plugins=()
 
 # Xcode via @orta
-openx(){ 
+x(){ 
   if test -n "$(find . -maxdepth 1 -name '*.xcworkspace' -print -quit)"
   then
     echo "Opening workspace"
@@ -64,8 +61,15 @@ export PATH="$PATH:$HOME/.rvm/bin"
 export PATH=$PATH:$(go env GOPATH)/bin
 export GOPATH=$(go env GOPATH)
 
+export PATH="$PATH:/usr/local/sbin"
+
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 # Add Github access tokens if needed
+export GITHUB_ACCESS_TOKEN=""
+export GITHUB_API_TOKEN=""
+export DANGER_GITHUB_HOST=
+export DANGER_GITHUB_API_BASE_URL=
+export DANGER_GITHUB_API_TOKEN=""
