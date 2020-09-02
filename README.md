@@ -4,6 +4,8 @@ Configuration and dot files I use when installing my development setup on a new 
 
 ## Install
 
+- `brew install fzf`
+
 #### Text Editor(s)
 - Download sublime text
 - `sudo mkdir -p "/usr/local/bin/" && sudo ln -s /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl /usr/local/bin/subl`
